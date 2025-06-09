@@ -1,202 +1,208 @@
 :root {
-    --secondary: #0D3B66;
-    --secondaryDarker: #051a2e;
-    --background: #f0fdff;
-    --card-bg: #ffffff;
-    --text-main: #2E2E2E;
-    --text-muted: #6C757D;
-    --border: #DADADA;
-    --highlight: #0da8c7;
-    --darker-highlight: #054855;
+  --secondary: #0D3B66;
+  --secondaryDarker: #051a2e;
+  --background: #f0fdff;
+  --card-bg: #ffffff;
+  --text-main: #2E2E2E;
+  --text-muted: #6C757D;
+  --border: #DADADA;
+  --highlight: #0da8c7;
+  --darker-highlight: #054855;
 
-    --darkBackground: #1F1F1F;
-    --dark-card-bg: #2A2A2A;
-    --dark-text-main: #FFFFFF;
-    --dark-text-muted: #AAAAAA;
-    --dark-border: #333333;
+  --darkBackground: #1F1F1F;
+  --dark-card-bg: #2A2A2A;
+  --dark-text-main: #FFFFFF;
+  --dark-text-muted: #AAAAAA;
+  --dark-border: #333333;
 
-    --stylishFont: "Afacad Flux", serif;
+  --stylishFont: "Afacad Flux", serif;
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Afacad Flux", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--background);
-    color: var(--text-main);
-    font-family: "Afacad Flux", serif;
+  background-color: var(--background);
+  color: var(--text-main);
+  font-family: "Afacad Flux", serif;
 }
 
 .main-header {
-    background-color:  rgba(5, 26, 46, 0.5);;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+  background-color:  rgba(5, 26, 46, 0.5);
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0; 
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Just in case it gets too narrow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .company-logo img {
-    height: 50px;
-    margin-right: 10px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .logo a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Nav and Search aligned to the right */
 .right-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Navigation styling */
 .main-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
 }
 
 .main-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 .main-nav a.active {
-    color: #0077cc;
+  color: #0077cc;
 }
 
 /* Search bar styling */
 .search-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 #search-input {
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 #search-button {
-    padding: 6px 10px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 6px 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Main hero image */
 .hero-image {
-    margin: 0 auto;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 2rem;
+  margin-top: 0; 
+  padding-top: 0;
 }
+.hero-image video{
+  display: block;
+  height: 90vh;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
 
 /* Services section */
 .services-section {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .services-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0c4a6e;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0c4a6e;
+  text-align: center;
 }
 
 .services-section p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-    line-height: 1.6;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  line-height: 1.6;
 }
 
 .services-list {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .service-item {
-    background-color: #f0f9ff;
-    border-left: 6px solid #0284c7;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+  background-color: #f0f9ff;
+  border-left: 6px solid #0284c7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
 
 .service-item:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .service-item h2 {
-    color: #0369a1;
-    margin-bottom: 0.75rem;
+  color: #0369a1;
+  margin-bottom: 0.75rem;
 }
 
 .service-item p {
-    color: #444;
+  color: #444;
 }
 
 /* Related items section */
 .related-items-section {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
 }
 
 .related-items-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #0c4a6e;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0c4a6e;
+  text-align: center;
 }
 
 .related-videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .related-videos video {
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .dishdash {
@@ -216,17 +222,17 @@ body {
 }
 
 @media (max-width: 600px) {
-    .services-section h1 {
-        font-size: 2rem;
-    }
+  .services-section h1 {
+    font-size: 2rem;
+  }
 
-    .related-videos video {
-        width: 100%;
-        max-width: 100%;
-    }
+  .related-videos video {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
